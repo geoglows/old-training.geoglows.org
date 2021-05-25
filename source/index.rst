@@ -12,6 +12,9 @@ Welcome to GEOGloWS Training's documentation!
 
    overview
    geoglows-web-apps
+   streamflow-services
+   validation-tools
+   bias-correction
 
 
 Indices and tables
