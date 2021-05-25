@@ -11,6 +11,7 @@ Welcome to GEOGloWS Training's documentation!
    :caption: Contents:
 
    overview
+   geoglows-web-apps
 
 
 Indices and tables
