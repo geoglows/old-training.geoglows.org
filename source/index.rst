@@ -16,7 +16,7 @@ Welcome to GEOGloWS Training's documentation!
    validation-tools
    bias-correction
    water-data-explorer
-   water-data-explorer
+   met-data-explorer
    flood-maps-and-impact
 
 
