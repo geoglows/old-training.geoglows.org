@@ -15,6 +15,9 @@ Welcome to GEOGloWS Training's documentation!
    streamflow-services
    validation-tools
    bias-correction
+   water-data-explorer
+   water-data-explorer
+   flood-maps-and-impact
 
 
 Indices and tables
