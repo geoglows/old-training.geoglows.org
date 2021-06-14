@@ -1,23 +1,20 @@
-.. GEOGloWS Training documentation master file, created by
-   sphinx-quickstart on Tue May 25 14:33:53 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to GEOGloWS Training's documentation!
-=============================================
+GEOGloWS Training
+=================
+This website contains training materials, presentations, videos, workshops code notebooks, and links to other resources
+to learn about use the GEOGloWS ECMWF Streamflow Model.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
-   overview
-   geoglows-web-apps
-   streamflow-services
-   validation-tools
-   bias-correction
-   water-data-explorer
-   met-data-explorer
-   flood-maps-and-impact
+   pages/overview
+   pages/streamflow-model
+   pages/model-validation
+   pages/model-bias-correction
+   pages/geoglows-toolbox
+   pages/water-data-explorer
+   pages/met-data-explorer
+   pages/flood-maps-and-impact
 
 
 Indices and tables
