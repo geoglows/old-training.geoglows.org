@@ -7,14 +7,14 @@ to learn about use the GEOGloWS ECMWF Streamflow Model.
    :maxdepth: 1
    :caption: Contents:
 
-   pages/overview
-   pages/streamflow-model
-   pages/model-validation
-   pages/model-bias-correction
-   pages/geoglows-toolbox
-   pages/water-data-explorer
-   pages/met-data-explorer
-   pages/flood-maps-and-impact
+   content/overview
+   content/streamflow-model
+   content/model-validation
+   content/model-bias-correction
+   content/geoglows-toolbox
+   content/water-data-explorer
+   content/met-data-explorer
+   content/flood-maps-and-impact
 
 
 Indices and tables
