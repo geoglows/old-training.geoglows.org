@@ -1,26 +1,45 @@
 GEOGloWS ECMWF Streamflow Services
 ==================================
+Tutorial
+--------
+This tutorial will show how to use the GEOGloWS ECMWF Streamflow Explorer App. Features include a forecast hydrograph
+for each stream, historically simulated streamflows, and the ability to download time series.
 
-This presentation is an introduction to the GEOGloWS ECMWF Streamflow Model which provies a 15-day streamflow forecast
-and 40 year historical simulation around the world on 1.5 million stream segments.
+Open App
+--------
+To open the app, please click here: `<https://geoglows.apps.aquaveo.com/apps/geoglows-hydroviewer/>`_
 
-`View the presentation on Google Slides <https://docs.google.com/presentation/d/1UofvD2PjkLPQAmiKBKKp4ALz70M_tyzKYo-pA01w5xg/edit?usp=sharing>`_
+View the Animated Forecast
+--------------------------
+1. Zoom in on an area that looks interesting and explore the buttons on the left hand side of the hydroviewer
 
-GEOGloWS Global HydroViewer Workshop
-------------------------------------
-`GEOGloWS Global HydroViewer Workshop <https://docs.google.com/document/d/1IT0BlhtzFfrQShVWKqT_asB9WgyC-D-UCH8-B8phW3A/edit?usp=sharing>`_
+.. image:: /_static/imgs/streamflow-services/animated-forecast-full.jpg
+   :width: 700
 
-(12 min) Presentation: `API for the GEOGloWS ECMWF Streamflow Services <https://byu.zoom.us/rec/share/vZctcZrRrjJIHNLHwk_ha5AuGJ3nX6a8hiEa_PIPmU8VGD7BFDq06Ic53Ihf5Pdu?startTime=1594159724000>`_
+2. While examining the area, press the triangle “play” button on the left hand side and notice how the thickness
+(discharge magnitude) and color (extreme event) can change. After examining for a few minutes push the square “stop”
+button.
 
-REST API Workshops
-------------------
+.. image:: /_static/imgs/streamflow-services/animated-forecast-play.jpg
+   :width: 700
 
-| `REST API Workshop <https://docs.google.com/document/d/1tyD49a-LYyJr0vwB_gO7Xcg-_9lxATzWYN5XIL474f8/edit?usp=sharing>`_
-| `REST API Access for Streamflow Services Workshop <https://docs.google.com/document/d/1XOL1JP21oUEMJFCV9Bq-7OvmU__x1hrf8sJgQyIuweA/edit?usp=sharing>`_
+3. Next, use the two arrow buttons to toggle through and observe the changes of the forecast
 
-Python Workshops
------------------
+.. image:: /_static/imgs/streamflow-services/animated-forecast-arrows.jpg
+   :width: 700
 
-| `Python Package and Colaboratory Notebook API Access <https://gist.github.com/rileyhales/873896e426a5bd1c4e68120b286bc029>`_
-| `Using the GEOGloWS Python Package for Streamflow Services <https://colab.research.google.com/gist/rileyhales/844fcfb617512eb6b94a5912182cca4e/geoglows-tutorial-geoglows-ecmwf-streamflow.ipynb>`_
-| `Tethys HydroViewer Customization using API Services <https://docs.google.com/document/d/1a47nTT7Kpp0utXWZ59oTRthFHVYqb-a6BacyeneNrY4/edit?usp=sharing>`_
+Visualize and Obtain Data
+-------------------------
+Choose a stream and click on it in order to pull up the data. On the top bar, there are five tabs that allow you to
+examine the forecast and simulated historical data for the selected stream.
+
+.. image:: /_static/imgs/streamflow-services/streamflow-results.jpg
+   :width: 700
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Workshops:
+
+   streamflow-model-workshops/geoglows-global-hydroviewer-workshop
+   streamflow-model-workshops/python-workshop
+   streamflow-model-workshops/rest-api-workshop
