@@ -3,3 +3,89 @@ GEOGloWS Global HydroViewer Workshop
 `GEOGloWS Global HydroViewer Workshop <https://docs.google.com/document/d/1IT0BlhtzFfrQShVWKqT_asB9WgyC-D-UCH8-B8phW3A/edit?usp=sharing>`_
 
 (12 min) Presentation: `API for the GEOGloWS ECMWF Streamflow Services <https://byu.zoom.us/rec/share/vZctcZrRrjJIHNLHwk_ha5AuGJ3nX6a8hiEa_PIPmU8VGD7BFDq06Ic53Ihf5Pdu?startTime=1594159724000>`_
+
+View the Animated Forecast
+==========================
+1. Zoom in on an area that looks interesting and explore the buttons on the left hand side of the hydroviewer
+
+.. image:: /_static/imgs/streamflow-services/animated-forecast-full.jpg
+   :width: 700
+
+2. While examining the area, press the triangle “play” button on the left hand side and notice how the thickness
+(discharge magnitude) and color (extreme event) can change. After examining for a few minutes push the square “stop”
+button.
+
+.. image:: /_static/imgs/streamflow-services/animated-forecast-play.jpg
+   :width: 700
+
+3. Next, use the two arrow buttons to toggle through and observe the changes of the forecast
+
+.. image:: /_static/imgs/streamflow-services/animated-forecast-arrows.jpg
+   :width: 700
+
+
+
+Locate a Stream by its reach_ID
+===============================
+
+You can zoom in and select any stream you want (and feel free to explore) but in order to match other examples later
+follow these steps to locate a specific reach ID found in Colombia.
+
+1. On the left panel under the animation control options enter 9004355 in the box for “Search for a Reach ID”
+2. Then select the “Find a Reach ID”
+
+.. image:: /_static/imgs/streamflow-services/select-river.png
+   :width: 700
+
+3. Now select on the stream nearest the pin (you may have to zoom in for better accuracy).
+4. The current 10-day ensemble forecast is displayed in the plot window for the selected stream segment ID
+
+.. image:: /_static/imgs/streamflow-services/10-day-ensemble-forecast.png
+   :width: 700
+
+Visualize and Obtain Data
+=========================
+Choose a stream and click on it in order to pull up the data. On the top bar, there are five tabs that allow you to
+examine the forecast and simulated historical data for the selected stream.
+
+.. image:: /_static/imgs/streamflow-services/streamflow-results.jpg
+   :width: 700
+
+Forecasts
+*********
+
+1. The forecast (as shown above) comes from 51 different simulations. It includes the average, the 25-75 percentile flows, the maximum and the minimum flows, and a single higher resolution forecast (black line - HRES).
+2. The legend can be seen on the right, and the different layers can be turned on and off by double clicking on them in the legend. Experiment with turning on/off the display of each layer.
+3. Click the return period threshold periods to turn on or to switch between different periods
+4. The actual data streamflow value for each time period can be displayed by hovering the cursor over the graph.
+5. The forecast also includes the return periods which are toggled on by default when the forecast exceeds a threshold as seen below, but are off by default when they do not as shown in the figure above. The return period threshold values are displayed when hovering over them on the right edge of the graph.
+
+.. image:: /_static/imgs/streamflow-services/forecasted-return-periods.png
+   :width: 700
+
+Historical
+**********
+
+1. This is a graph of the 40-year simulated historical flow.
+2. The different colors in the graph represent the different return periods which are computed from the 40-year historical simulation and Gumbel Method.
+3. A table displaying the threshold values is included below the graph.
+
+.. image:: /_static/imgs/streamflow-services/historical-simulation.png
+   :width: 700
+
+Daily/Monthly Average
+*********************
+
+1. Daily and Monthly Average Streamflows are calculated from historical simulation.
+2. These tabs will pop up on the top after you click “Get Historical Data”
+
+.. image:: /_static/imgs/streamflow-services/streamflow-averages.png
+   :width: 700
+
+Flow-Duration
+*************
+
+1. Exceedance probability of different flow rates.
+
+.. image:: /_static/imgs/streamflow-services/flow-duration-curve.png
+   :width: 700

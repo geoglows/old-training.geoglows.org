@@ -1,5 +1,5 @@
-The Met Data Explorer and Gridded Time Series Data
-==================================================
+The Met Data Explorer
+=====================
 
 We should include using the Grids Python package and discuss limitations on file formats, or at least our “preferred”
 format.

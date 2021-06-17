@@ -22,10 +22,8 @@ Click |intro_link| to view a presentation that introduces GEOGloWS.
    :maxdepth: 1
    :caption: Contents:
 
-   content/streamflow-model
-   content/model-validation
-   content/model-bias-correction
    content/geoglows-toolbox
+   content/streamflow-model
    content/water-data-explorer
    content/met-data-explorer
    content/flood-maps-and-impact
