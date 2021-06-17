@@ -16,7 +16,7 @@ Click |intro_link| to view a presentation that introduces GEOGloWS.
 
 .. |intro_link| raw:: html
 
-   <a href="https://docs.google.com/presentation/d/e/2PACX-1vQAbdSoyUC0oIokZ5pu44-gcNW6B5v2x_8TgPTW1rGWKjj-ibIFNQ1eItIrwOpsKOE4wVgmALLeAvBG/pub?start=false&loop=false&delayms=3000" target="_blank">here</a>
+   <a href="https://docs.google.com/presentation/d/1heoy5M2bFIZxkaM19MHvpEZDs6TuPEShP8kMjNoHczM/edit?usp=sharing">here</a>
 
 .. toctree::
    :maxdepth: 1
@@ -26,7 +26,6 @@ Click |intro_link| to view a presentation that introduces GEOGloWS.
    content/streamflow-model
    content/water-data-explorer
    content/met-data-explorer
-   content/flood-maps-and-impact
 
 
 Indices and tables
@@ -35,3 +34,7 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. _link-to-geoglows-model-page
+
+.. rst shortcut to make a link

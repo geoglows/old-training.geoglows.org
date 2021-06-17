@@ -1,6 +1,10 @@
 Bias Correction
 ---------------
 
+Click here to view a presentation that introduces the bias correction process: https://docs.google.com/presentation/d/1XZ15eqWV1hT4UdX9DxLjctpyS0Bb2G8UGg5oYnuaKQw/edit?usp=sharing
+
+Bias Correction Workshop: https://colab.research.google.com/drive/15MUTx3lb5P93BLUv8Uehv0gTudc43qkX?usp=sharing
+
 If you have observed streamflow data, you can add it to the bias correction tool through a csv file and view corrections
 for the simulated data.
 
@@ -37,25 +41,25 @@ If you scroll down there is also a bias correction scatter plot as well as a tab
    :width: 700
 
 Bias Corrected Flow Duration Curve
-----------------------------------
+**********************************
 
 .. image:: /_static/imgs/streamflow-services/bias-corrected-flow-curve.png
    :width: 700
 
 Average Flows
--------------
+*************
 
 .. image:: /_static/imgs/streamflow-services/average-flows.png
    :width: 700
 
 Historical
-----------
+**********
 
 .. image:: /_static/imgs/streamflow-services/historical.png
    :width: 700
 
 Forecasts
----------
+*********
 
 .. image:: /_static/imgs/streamflow-services/forecasts.png
    :width: 700
