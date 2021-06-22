@@ -1,15 +1,20 @@
 Bias Correction
 ---------------
+If you have historical observations for a site you are interested in then you can use that do adjust any bias in the
+historical simulation and forecast at that point (we are working on extending bias correction to ungaged areas). The
+methods and results from some pilot studies are given in the presentation and then you can see how this works as part of
+the GEOGloWS Hydroviewer app or with the workflow given in the Python notebook that uses functionality from the geoglows
+Python package.
 
-Click here to view a presentation that introduces the bias correction process: https://docs.google.com/presentation/d/1XZ15eqWV1hT4UdX9DxLjctpyS0Bb2G8UGg5oYnuaKQw/edit?usp=sharing
+`Bias Correction Presentation <https://docs.google.com/presentation/d/1XZ15eqWV1hT4UdX9DxLjctpyS0Bb2G8UGg5oYnuaKQw/edit?usp=sharing>`_
 
-Bias Correction Workshop: https://colab.research.google.com/drive/15MUTx3lb5P93BLUv8Uehv0gTudc43qkX?usp=sharing
+`Bias Correction Workshop <https://colab.research.google.com/drive/15MUTx3lb5P93BLUv8Uehv0gTudc43qkX?usp=sharing>`_
 
 If you have observed streamflow data, you can add it to the bias correction tool through a csv file and view corrections
 for the simulated data.
 
-Upload your csv file
-=====================
+Using the Bias Correction option in the GEOGloWS Hydroviewer
+============================================================
 
 1. For the river we have been using, you can download the data file with the following link: https://www.hydroshare.org/resource/d222676fbd984a81911761ca1ba936bf/data/contents/Discharge_Data/23187280.csv
 2. On the main part of the GEOGloWS Hydroviewer go to Bias Correction and select Upload New Observation

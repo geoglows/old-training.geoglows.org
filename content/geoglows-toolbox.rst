@@ -10,29 +10,34 @@ stakeholders.
 .. image:: /_static/imgs/geoglows-toolbox/toolbox.jpg
    :width: 700
 
+`GEOGloWS Toolbox Presentation <https://docs.google.com/presentation/d/1Ur45mm11KcIYxz0rEHVMxO7loHWobvCtclcV5BW9nsU/edit?usp=sharing>`_
+
+
 You can navigate to the GEOGloWS Toolbox hosted by Aquaveo and explore any or all of the apps here:
 http://apps.geoglows.org/. Note that the Tethys App Warehouse is only functional when logged in as an administrator and
 is used to add, update, and delete apps available in the Warehouse.
 
-Click on the following link to view a presentation that introduces the GEOGloWS Toolbox: https://docs.google.com/presentation/d/1Ur45mm11KcIYxz0rEHVMxO7loHWobvCtclcV5BW9nsU/edit?usp=sharing
+:doc:`GEOGloWS HydroViewer </content/streamflow-model>`
+    The GEOGloWS ECMWF Streamflow Services provides access to a 40-year simulation and
+    daily 15-day ensemble forecast on nearly 1,000,000 river reaches globally.
 
-This lesson introduces the open source web app development platform and how it has been used in the NASA SERVIR and
-GEOGloWS projects to create a basic “Toolbox” of global water sustainability apps for the end users and stakeholders.
-These can be configured as a base set of tools on a Tethys Portal anywhere. After the presentation there is a short
-workshop that allows you to explore a few different apps.
+:doc:`Water Data Explorer </content/water-data-explorer>`
+    This web app is used by the WMO as a catalog, data access, and visualization for observational and other time series
+    hydrological data stored at point locations.
 
-| (18 min) Presentation: `Disruptive Technologies - Tethys App Development SERVIR/GEOGloWS <https://byu.zoom.us/rec/share/7u9pCqDfrWlOYoXs8lqDXI0vE7nFeaa8gSkdrqAIzk6RGqru4Yz-hgIm-U1JX7G6?startTime=1594134646000>`_
-| (20 min) Workshop: `Exploring GEOGloWS Tethys Apps <https://docs.google.com/document/d/1TLKvYMV4lC2ZHyiT3Ubgm3IRXU3nIyRzOuP_4Cd1PZU/edit?usp=sharing>`_ (Need to update this one significantly)
+:doc:`Met Data Explorer </content/met-data-explorer>`
+    Similar to the Water Data Explorer, this app is used to process multi-dimensional gridded data typical of meteorological
+    forecasting systems that produce output in a time series stack of rasters formatted in netCDF, Grib, and geoTIFF. This
+    could be any type of data, but most often are used in GEOGloWS for precipitation.
 
-GEOGloWS Hydroviewer
-To explore this app, please visit the `GEOGloWS ECMWF Streamflow Services <https://geoglows-training/_build/html/content/streamflow-model.html>`_ page.
-please visit: :ref:`my-reference-label`.
+:doc:`GRACE Groundwater </content/groundwater-tools>`
+    The GRACE satellite data have become useful to understand groundwater anomalies. This application (still being updated)
+    provides visualization and access to this information.
 
-Water Data Explorer
-
-Met Data Explorer
-
-GRACE Groundwater
+:doc:`HydroStats </content/streamflow-model-workshops/historical-validation>`
+    This application is used for validation of the GEOGloWS streamflow historical and forecasts as you will see in those
+    sections, but it is a general purpose tool to perform a goodness of fit between observed and modeled (or any two) time
+    series.
 
 
 

@@ -16,134 +16,87 @@ access, visualize, and download data from any Information System that makes avai
 through WaterOneFlow services. WDE is designed in a way that allows users to customize it for local or regional web
 portals.
 
-Functionalities
----------------
+`WHOs Water Data Explorer Presentation <https://docs.google.com/presentation/d/1Is6XLdTIocXiKd1yQN1VnV-AcVLw_VmI82iJXj4ESW4/edit?usp=sharing>`_
 
-User Interface
-**************
+`Water Data Explorer Guide <https://water-data-explorer.readthedocs.io/en/latest/index.html#>`_
 
-To organize and manage various WaterOneFlow web services, WDE uses Data Views that are organized in Catalogs.
+.. |filter| image:: /_static/imgs/water-data-explorer/filter.png
 
-.. image:: /_static/imgs/water-data-explorer/views-catalogs.png
-   :width: 700
+.. |refresh| image:: /_static/imgs/water-data-explorer/refresh.png
+   :scale: 25%
 
-Catalogs contain different data views that contain a set of data accessible through a specific WaterOneFlow web service.
-The stations with accessible data are displayed on the WDE map interface along with a legend of the respective Data
-Views.
+.. |location| image:: /_static/imgs/water-data-explorer/location.png
+   :scale: 50%
 
-.. image:: /_static/imgs/water-data-explorer/selected-view.png
-   :width: 700
+.. |list| image:: /_static/imgs/water-data-explorer/list.png
+   :scale: 50%
 
-For each station, a set of metadata is available in the Graphs Panel. There is additionally, a table of observed
-variables for each Station, including variable names, units, and interpolation types.
+.. |info| image:: /_static/imgs/water-data-explorer/info.png
+   :scale: 50%
 
-.. image:: /_static/imgs/water-data-explorer/selected-station.png
-   :width: 700
-
-Time-series data can be plotted as either a “Scatter” or “Whisker and Box” plot. The data can also be downloaded in CSV,
-`OGC NetCDF <https://www.ogc.org/standards/netcdf>`_, `OGC WaterML 2.0 <https://www.ogc.org/standards/waterml>`_, and
-`CUAHSI WaterML 1.0 <https://his.cuahsi.org/wofws.html>`_ formats for any available time period in the Time Series Plots
-section.
-
-.. image:: /_static/imgs/water-data-explorer/time-series-plot.png
-   :width: 700
-
-Data Discovery
-**************
-
-The user can filter the available Views by Country and variable by using the green filter icon in the top left corner.
-
-*Note* The user selects to only display the variables included by the selected countries by using the blue 'Update
-Variables' button.
-
-.. image:: /_static/imgs/water-data-explorer/update-variables.png
-   :width: 700
-
-.. image:: /_static/imgs/water-data-explorer/view-controls.png
-   :width: 700
-
-Data Analysis
-*************
-
-The WDE application uses a python package called “Pywaterml”. Pywaterml accesses the WaterOneFlow (WOF) web services and
-retrieves the information in different formats. The Pywaterml can be used as a Python Notebook.
-
-Users can open the Python notebook tutorial and the Pywaterml documentation by clicking on the Google Colab and the
-green book icons.
-
-For a selected view, users can open a Python notebook template in Google Colab. The Python notebook can also be
-downloaded for a specific station or variable.
-
-.. image:: /_static/imgs/water-data-explorer/anaylsis-tools.png
-   :width: 700
-
-Time Series Visualization and Downloading
-*****************************************
-
-To visualize and download time series available for a specific station, the user can select the station on the WDE map
-interface, triggering the opening of the WDE Graphs Panel at the bottom of the application. Use the green bar graph icon
-on the top right of the Graphs Panel to select the time series to be visualized or downloaded.
-
-.. image:: /_static/imgs/water-data-explorer/graphs-panel.png
-   :width: 700
-
-*Note* User can hide or show the Graphs Panel by means of the bar graph icon on the right of the application
-header. In the opened window, the user can select a variable of interest, plot type, and time period of interest.
-
-WDE uses the Plotly library which provides the menu above, to allow users to download plots in PNG format, pan to, zoom
-in/out, and autoscale plots.
-
-Administrator Functionalities
+Functionalities Demonstration
 -----------------------------
 
-Adding and Deleting Data Catalogs and Views
-*******************************************
+This demo will explain how to use the WDE functionalities as a regular user, without admin permissions. We will be using
+the “Test” Catalog, with views “Los Nevados” and “ParaN.” These views should be preloaded in the `tethys staging portal <https://tethys-staging.byu.edu/apps/>`_.
 
-Users can add catalogs to the WDE. The blue and white plus button will access the “Add a Catalog of Views” menu.
+When it comes to sorting through data you can use the |filter| icon, this will open the **Filter of Views** menu.
 
-.. image:: /_static/imgs/water-data-explorer/add-catalog.png
+.. image:: /_static/imgs/water-data-explorer/filter-location.png
+   :width: 300
+
+The **Filter of Views** menu allows users to filter by country and/or variable.
+
+.. image:: /_static/imgs/water-data-explorer/filter-of-views.png
+   :width: 500
+
+Select **Puerto Rico** from the *Filter by Country* tab and then click the green **Filter Views** button. It will then limit the
+views to views only in Puerto Rico, you can reset the filters by hitting the **Reset** button.
+
+You will notice that next to the different views is a checkbox and four icons. These icons all have different functions.
+
+.. image:: /_static/imgs/water-data-explorer/four-icons.png
+   :width: 300
+
+The **checkbox** selects the views being displayed on the map. Click the checkbox next to the ParaN view, notice that some
+stations appear on the map in Puerto Rico.
+
+The |refresh| icon refreshes the view it corresponds with, refreshing will add or remove points that have been added or
+removed to the data since the last refresh. Go ahead and hit this icon, you should notice the WDE loading and after will
+display a message indicating how many sites were changed.
+
+Click the |location| icon next to the ParaN view, notice that it zooms into where the stations are on the map, this
+button will zoom up close to whichever view it corresponds with.
+
+The |list| icon displays a list of available variables of the view. When you click on this icon next to the ParaN view,
+it should display three variables: Discharge, Velocity, and Average Water Depth.
+
+.. image:: /_static/imgs/water-data-explorer/available-variables.png
    :width: 700
 
-To add a new Catalog of Views, administrators should enter its title, description, and endpoint if available.
+The |info| icon displays the information about a view, including the description, endpoint, list of stations, and the
+available analysis tools.
 
-*Note* To add a Catalog that is already published and accessible through WaterOneFlow web services, administrators
-should enter the Catalog endpoint to automatically import its Views. Administrators can check the available Views by
-using the blue 'Check Services' button.
+Select a station from the ParaN view, it will bring up a data tab below the map containing information about the
+station, including the variables included in the data.
 
-To add Views to a specific Catalog, administrators should use the blue and white plus button to the right of the
-Catalog’s title to access the “Add Views to Catalog” menu.
-
-.. image:: /_static/imgs/water-data-explorer/add-views.png
+.. image:: /_static/imgs/water-data-explorer/station-info.png
    :width: 700
 
-The blue trash can button will access the “Delete Views” menu, allowing admins to delete views by selecting the view to
-be deleted.
+Hit the green graphing button, notice that the tab transitions to an empty graph. The Water Data Explorer will plot the
+time series for you. Click the blue **Select Variable** dropdown menu and select one of the variables. Then below the Select
+Variable menu are plotting options, you can choose between  “Scatter” or “Whisker and Box” Plots.
 
-.. image:: /_static/imgs/water-data-explorer/delete-views.png
+.. image:: /_static/imgs/water-data-explorer/select-variable.png
    :width: 700
 
-The red trash can button will access the “Delete Catalogs” menu, where admins can delete catalogs by selecting the
-Catalog to be deleted.
+Once you choose a variable and plot type, hit the green Plot Time Series button and the WDE will then plot the time
+series in the graph below.
 
-.. image:: /_static/imgs/water-data-explorer/delete-catalogs.png
+.. image:: /_static/imgs/water-data-explorer/plot-time-series.png
    :width: 700
 
-Customizing the WDE User Interface
-----------------------------------
-
-To customize the WDE user interface, select the grey settings icon.
-
-.. image:: /_static/imgs/water-data-explorer/customize.png
-   :width: 700
-
-In the Custom Settings table, admins can customize the name and logo of the WDE to suit the institution using it. They
-can also change the boundaries of the map interface.
-
-
-
-
-
-
-
-
+Below the **Plot Time Series** button is a download menu, this menu allows users to download the data to their local
+computer. When you click on it you will notice the different downloadable file types. For this time-series dataset you
+can only download CSV, Waterml 1.2,  and Waterml 2.0. NetCDF is not available for any of the Cuahsi HIS Central Datasets.
 

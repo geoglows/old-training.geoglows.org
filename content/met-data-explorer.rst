@@ -1,10 +1,11 @@
+.. _Met Data Explorer:
+
 The Met Data Explorer
 =====================
 
-We should include using the Grids Python package and discuss limitations on file formats, or at least our “preferred”
-format.
+`Grids Package Information <https://tsgrids.readthedocs.io/en/latest/>`_
 
 Workshop
 --------
 
-Something Similar to the WDE
+Under Construction
