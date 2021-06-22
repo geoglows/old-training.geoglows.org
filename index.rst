@@ -1,14 +1,17 @@
 GEOGloWS Training
 =================
-This website contains training materials, presentations, videos, workshops code notebooks, and links to other resources
-to learn about use the GEOGloWS ECMWF Streamflow Model.
+This website contains training materials, presentations, videos, workshops, code notebooks, and links to other resources
+to learn about the use of the GEOGloWS Toolbox for accessing relevant global water information. The principal tool has
+been the GEOGloWS ECMWF Streamflow Services, but additional tools for discovering in situ observations,
+multi-dimensional gridded time series data such as come from numerical weather models and groundwater are being added
+and improved.
 
 Overview
 ========
-The GEOGloWS ECMWF Streamflow Service uses a Hydrologic Modeling as a Service (HMaaS) approach, which centralizes the
-cyberinfrastructure, human capacity, and other components of hydrologic modeling using the best forecasts and expertise
-available, along with the latest advances in Information and Communication Technology (ICT). We can now deliver reliable
-forecast information as a service, instead of all the underlying data that must be synthesized and computed locally.
+The `GEOGloWS initiative <https://www.geoglows.org/>`_ consolidates elements of freshwater activities in GEO. It ensures
+that strong coordination and commitment are in place for links among data, information, knowledge, applications, and
+policy. From research to implementation, GEOGloWS provides the demonstration grounds for user-driven solutions to
+address water issues.
 
 .. image:: _static/imgs/overview/forecasted-and-historical-streamflow.jpg
 

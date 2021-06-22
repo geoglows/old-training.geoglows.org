@@ -1,6 +1,19 @@
 GEOGloWS Toolbox with Tethys
 ============================
 
+The GEOGloWS Toolbox is a collection of specific water resources Earth Observation decision support web app tools. It
+builds on what is being organized in GEOGloWS as an App Warehouse which you can think of as being similar to Apple or
+Android app stores. These foundational applications are drawn from the warehouse of apps that will grow over time and
+can be downloaded and combined on customized portals with customized apps to meet the specific needs of different
+stakeholders.
+
+.. image:: /_static/imgs/geoglows-toolbox/toolbox.jpg
+   :width: 700
+
+You can navigate to the GEOGloWS Toolbox hosted by Aquaveo and explore any or all of the apps here:
+http://apps.geoglows.org/. Note that the Tethys App Warehouse is only functional when logged in as an administrator and
+is used to add, update, and delete apps available in the Warehouse.
+
 Click on the following link to view a presentation that introduces the GEOGloWS Toolbox: https://docs.google.com/presentation/d/1Ur45mm11KcIYxz0rEHVMxO7loHWobvCtclcV5BW9nsU/edit?usp=sharing
 
 This lesson introduces the open source web app development platform and how it has been used in the NASA SERVIR and

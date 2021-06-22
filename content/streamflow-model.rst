@@ -1,8 +1,10 @@
 GEOGloWS ECMWF Streamflow Services
 ==================================
 
-This tutorial will show how to use the GEOGloWS ECMWF Streamflow Explorer App. Features include a forecast hydrograph
-for each stream, historically simulated streamflows, and the ability to download time series.
+The GEOGloWS ECMWF Streamflow Service uses a Hydrologic Modeling as a Service (HMaaS) approach, which centralizes the
+cyberinfrastructure, human capacity, and other components of hydrologic modeling using the best forecasts and expertise
+available, along with the latest advances in Information and Communication Technology (ICT). We can now deliver reliable
+forecast information as a service, instead of all the underlying data that must be synthesized and computed locally.
 
 
 To open the app, please click here: `<https://geoglows.apps.aquaveo.com/apps/geoglows-hydroviewer/>`_
