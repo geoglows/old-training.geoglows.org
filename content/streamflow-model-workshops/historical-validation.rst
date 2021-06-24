@@ -5,77 +5,190 @@ The historical validation workshops will showcase some of the validation work we
 More importantly these workshops will guide you on how you can use your own local observations to evaluate the
 performance of the model for your rivers.
 
-`Historical Validation Studies and Methods <https://docs.google.com/presentation/d/1rPriBch8Dr72Cx5nK2nayFLH60NvH7-qqawBdEXsXTA/edit?usp=sharing>`_
+`Historical Validation Studies and Methods Presentation <https://docs.google.com/presentation/d/1rPriBch8Dr72Cx5nK2nayFLH60NvH7-qqawBdEXsXTA/edit?usp=sharing>`_
 
-`How to Perform Historical Validation Using Your own Observation Data <https://colab.research.google.com/drive/14u9aMkf7_SnRdlmner5LdmG_ZfvrAGkL>`_
+`How to Perform Historical Validation Using Your own Observation Data (Google Colab) <https://colab.research.google.com/drive/14u9aMkf7_SnRdlmner5LdmG_ZfvrAGkL>`_
 
-Tutorial
---------
-
-A GEOGloWS ECMWF Streamflow Services generates a historical simulation from 1979-present based on weather data records.
-However, the model often has bias, commonly overpredicting streamflow. When observed streamflow data is available on a
-stream, we can use that data to improve the historical simulation and forecast model. This process is called bias
-correction.
-
-This tutorial will show you how to perform a bias correction on streamflow data using the Global Hydroviewer Web App.
+In this tutorial, we will show how to validate the GEOGloWS ECMWF Streamflow Service historical simulation using the
+HydroStats tethys app.
 
 Obtain Data
 -----------
-1. We will need observed streamflow data. You may use your own observed data if you wish, or the demo data available
-here: https://www.hydroshare.org/resource/d222676fbd984a81911761ca1ba936bf/data/contents/Discharge_Data/23187280.csv.
 
-2. If you are using your own observed data, it should be saved as a .csv file that has 2 columns and both should have
-column labels in the first row. The first column should be titled ‘datetime’ and contain dates in a standard format.
-The second column may have any title but **must** contain streamflow values in cubic meters per second (m^3/s).
+For running the historical validation you should first identify the stream of interest. You will need historical
+observed and simulated streamflow data for this stream. For this tutorial, we will provide demo data for the Reach ID
+9004355.
 
-.. image:: /_static/imgs/historical-validation/csv-file-format.png
-   :width: 300
+1. Use this link to download the demo historical observed data:
+https://www.hydroshare.org/resource/d222676fbd984a81911761ca1ba936bf/data/contents/Discharge_Data/23187280.csv
+If you are performing the validation using your own observed data, your data must have two columns with column headers
+in the first row. The first column should be titled ‘datetime’ and contain dates in a standard format. The other may
+have any title but must contain streamflow values in cubic meters per second (m^3/s).
+The observed data csv should look like this:
 
-Inputting Data
---------------
+.. image:: /_static/imgs/historical-validation/demo-data.png
+   :width: 350
 
-1. Go to the GEOGloWS ECMWF Streamflow Hydroviewer:  https://geoglows.apps.aquaveo.com/apps/.
+2. To get the historical simulation data, go to this url, which will access the API and download the historical simulation:
+https://geoglows.ecmwf.int/api/HistoricSimulation/?reach_id=9004355&return_format=csv
+If you are performing the validation for a different Reach ID, you may edit the Reach ID in the url above, or use the
+GEOGloWS website to access the API. To use the interactive website, go to this link:
+https://geoglows.ecmwf.int/documentation#/default/get_HistoricSimulation_ and click Get Historic Simulation. Click
+“Try,” enter the Reach ID, and click “execute.” This will then give you the option to download the historical simulation.
+The simulated data csv should look like this:
 
-2. After opening the Hydroviewer app, find the river segment you would like to do the bias correction on. You can do
-this either by searching for a Reach ID or latitude/longitude coordinates using the fields on the left or by zooming to
-the river. If you are using the demo data, use the Reach ID 9004355.
+.. image:: /_static/imgs/historical-validation/simulated-data.png
+   :width: 350
 
-.. image:: /_static/imgs/historical-validation/reach-id.png
+Open the Statistics Calculator App
+-----------------------------------
+
+Once we have the historic simulated data and the historic observed data we are able to run the historical validation.
+
+1. Go to https://tethys-staging.byu.edu/apps/
+
+2. Open the Hydrostats App
+
+.. image:: /_static/imgs/historical-validation/hydrostats-app.png
    :width: 700
 
-3. Once you have found the river, click on it to pull up the forecast. This may take a few minutes to load. Then go to
-the Bias Correction tab at the top of the window.
+| 3. Login with the Demo Account (case sensitive)
+| a. Username: demo
+| b. Password: demo
 
-.. image:: /_static/imgs/historical-validation/bias-correction-tab.png
+.. image:: /_static/imgs/historical-validation/streamflow-stats-calculator.png
    :width: 700
 
-4. Now you can upload your observed data csv file by clicking on the blue “Upload New Observation” button and select the
-data you want to upload. Once you have a file uploaded, click “Start Bias Correction.”
+Preprocessing
+-------------
 
-.. image:: /_static/imgs/historical-validation/upload.png
-   :width: 700
+#. First, we will plot the Historical Simulation data.
 
-5. Running the bias correction generates a plot of cumulative volume and a scatter plot to show how the bias correction
-improved the Historical Simulation. You can turn the different lines and datasets on and off by clicking their label in
-the legend. A table of error metrics is also generated. Each error metric describes a different aspect of how correlated
-the datasets are; you can read more about the error metrics here: https://hydroerr.readthedocs.io/en/stable/list_of_metrics.html
+   a. Click on “Process a Time Series” on the left menu.
+   b. Upload the historical simulation csv.
 
-.. image:: /_static/imgs/historical-validation/volume-comparison.png
-   :width: 700
+   .. image:: /_static/imgs/historical-validation/process-time-series.png
+      :width: 700
 
-.. image:: /_static/imgs/historical-validation/scatter-plot.png
-   :width: 700
+   c. Click “Plot and Analyze Raw Data”
 
-.. image:: /_static/imgs/historical-validation/table.png
-   :width: 550
+   .. image:: /_static/imgs/historical-validation/hydrograph.png
+      :width: 700
 
-6. After running the bias correction, you can also go to the Historical tab, where a plot of the original simulated
-data, observed data, and corrected simulated data is generated.
+   d. Notice that the historical simulation has no gaps and an even time-step.
 
-.. image:: /_static/imgs/historical-validation/corrected-simulation-comparison.png
-   :width: 700
+#. Next, we will plot the Observed Data.
 
-7. Finally, you can go to the Forecasts tab, where a plot of the bias corrected forecast is generated.
+   a. Refresh the page “Process a Time Series Dataset”
+   b. Upload the observed data file.
 
-.. image:: /_static/imgs/historical-validation/corrected-streamflow.png
-   :width: 700
+   .. note::
+
+      Note: if there are timesteps with empty values, this part will not work. You will need to remove the empty timesteps.
+      The csv provided has empty values; you may skip this step if you don’t need to analyze the observed timeseries.
+
+   c. Click “Plot and Analyze Raw Data”
+
+   .. image:: /_static/imgs/historical-validation/plot-analyze-data.png
+      :width: 700
+
+   d. Notice that this timeseries has gaps. A summary is given showing the length and amount of gaps.
+
+   .. image:: /_static/imgs/historical-validation/gaps-summary.png
+      :width: 700
+
+   e. If desired, you can interpolate the missing data. For this example, we won’t interpolate.
+
+#. Click on “Merge Two Time Series” on the left menu.
+
+   a. Upload the historic observed data and the historical simulated data downloaded for this tutorial.
+
+   .. image:: /_static/imgs/historical-validation/merge-two-datasets.png
+      :width: 600
+
+   b. Click on “Plot Merged Data” to see the plot for observed and simulated data.
+
+   .. note::
+
+      Notice that the merged data only covers the time-steps that contain **both** the simulated and the observed data.
+
+   c. Click on Download Merged Data to save a csv file with the merged data.
+
+   .. image:: /_static/imgs/historical-validation/download-merged-data.png
+      :width: 600
+
+The critical thing for validating two datasets is to have a single .csv with both simulated and observed data merged.
+There should be a one-to-one relationship so that every time step has a value for both observed and simulated in order
+for the metrics to work correctly. There are some options to do this in the HydroStats App, but you may have to do some
+of this work on your own. Once you have a merged data .csv file, you can perform the validation with metrics from
+HydroStats.
+
+Visualization
+-------------
+
+#. Click on “Validate Historical Data” on the left menu. This tab allows us to validate the historical simulation.
+   a. Upload the Merge File you downloaded in the previous step.
+
+   .. image:: /_static/imgs/historical-validation/validate-historical-data.png
+      :width: 600
+
+#. Click on:
+
+   a. Create Hydrograph
+
+   .. image:: /_static/imgs/historical-validation/hydrograph-entire-series.png
+      :width: 700
+
+   b. Then create Hydrograph of Daily Averages
+
+   .. image:: /_static/imgs/historical-validation/hydrograph-daily-averages.png
+      :width: 700
+
+   c. Create Scatter Plot
+
+   .. image:: /_static/imgs/historical-validation/scatterplot-best-fit.png
+      :width: 550
+
+   d. Create Scatter Plot with Log-Log Scale
+
+   .. image:: /_static/imgs/historical-validation/scatterplot-log-scale.png
+      :width: 550
+
+Analysis
+--------
+
+1. Scroll down a little more on the “Validate Historical Data” page. You will see a “Table” section and right below that
+   we can select the metrics of interest to validate the streamflow prediction tool historical simulation compared with the
+   observed data.
+
+   a. In this case we are going to select:
+
+      i. Mean Absolute Error, Root Mean Square Error, Nash-Sutcliffe Efficiency, King-Gupta Efficiency (2012).
+      ii. Note: Leave all of the King-Gupta Efficiency (2012) parameters at the default setting
+
+   b. Finally, click on “Make Table” to see the report.
+
+   .. image:: /_static/imgs/historical-validation/make-table.png
+      :width: 700
+
+   .. image:: /_static/imgs/historical-validation/table-metrics.png
+      :width: 700
+
+2. Make a new table, with metrics of your choice.
+
+   a. See this full `list <https://hydrostats.readthedocs.io/en/stable/ref_table.html>`_ of metrics.
+
+3. If we click on “Compare Volume” we can compare the simulated hydrograph and the observed hydrograph volumes to get a
+rough estimate of water balance.
+
+   .. image:: /_static/imgs/historical-validation/volume.png
+      :width: 700
+
+
+
+
+
+
+
+
+
