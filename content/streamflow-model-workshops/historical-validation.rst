@@ -84,7 +84,7 @@ Preprocessing
 
    .. note::
 
-      Note: if there are timesteps with empty values, this part will not work. You will need to remove the empty timesteps.
+      If there are timesteps with empty values, this part will not work. You will need to remove the empty timesteps.
       The csv provided has empty values; you may skip this step if you don’t need to analyze the observed timeseries.
 
    c. Click “Plot and Analyze Raw Data”
@@ -163,8 +163,10 @@ Analysis
 
    a. In this case we are going to select:
 
-      i. Mean Absolute Error, Root Mean Square Error, Nash-Sutcliffe Efficiency, King-Gupta Efficiency (2012).
-      ii. Note: Leave all of the King-Gupta Efficiency (2012) parameters at the default setting
+      * Mean Absolute Error, Root Mean Square Error, Nash-Sutcliffe Efficiency, King-Gupta Efficiency (2012).
+      .. note::
+
+         Leave all of the King-Gupta Efficiency (2012) parameters at the default setting
 
    b. Finally, click on “Make Table” to see the report.
 
