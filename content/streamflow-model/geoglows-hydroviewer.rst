@@ -9,19 +9,19 @@ View the Animated Forecast
 --------------------------
 1. Zoom in on an area that looks interesting and explore the buttons on the left hand side of the hydroviewer
 
-.. image:: /_static/imgs/streamflow-services/animated-forecast-full.jpg
+.. image:: /_static/imgs/geoglows-hydroviewer/animated-forecast-full.jpg
    :width: 700
 
 2. While examining the area, press the triangle “play” button on the left hand side and notice how the thickness
 (discharge magnitude) and color (extreme event) can change. After examining for a few minutes push the square “stop”
 button.
 
-.. image:: /_static/imgs/streamflow-services/animated-forecast-play.jpg
+.. image:: /_static/imgs/geoglows-hydroviewer/animated-forecast-play.jpg
    :width: 700
 
 3. Next, use the two arrow buttons to toggle through and observe the changes of the forecast
 
-.. image:: /_static/imgs/streamflow-services/animated-forecast-arrows.jpg
+.. image:: /_static/imgs/geoglows-hydroviewer/animated-forecast-arrows.jpg
    :width: 700
 
 
@@ -35,13 +35,13 @@ follow these steps to locate a specific reach ID found in Colombia.
 1. On the left panel under the animation control options enter 9004355 in the box for “Search for a Reach ID”
 2. Then select the “Find a Reach ID”
 
-.. image:: /_static/imgs/streamflow-services/select-river.png
+.. image:: /_static/imgs/geoglows-hydroviewer/select-river.png
    :width: 700
 
 3. Now select on the stream nearest the pin (you may have to zoom in for better accuracy).
 4. The current 10-day ensemble forecast is displayed in the plot window for the selected stream segment ID
 
-.. image:: /_static/imgs/streamflow-services/10-day-ensemble-forecast.png
+.. image:: /_static/imgs/geoglows-hydroviewer/10-day-ensemble-forecast.png
    :width: 700
 
 Visualize and Obtain Data
@@ -49,7 +49,7 @@ Visualize and Obtain Data
 Choose a stream and click on it in order to pull up the data. On the top bar, there are five tabs that allow you to
 examine the forecast and simulated historical data for the selected stream.
 
-.. image:: /_static/imgs/streamflow-services/streamflow-results.jpg
+.. image:: /_static/imgs/geoglows-hydroviewer/streamflow-results.jpg
    :width: 700
 
 Forecasts
@@ -61,7 +61,7 @@ Forecasts
 4. The actual data streamflow value for each time period can be displayed by hovering the cursor over the graph.
 5. The forecast also includes the return periods which are toggled on by default when the forecast exceeds a threshold as seen below, but are off by default when they do not as shown in the figure above. The return period threshold values are displayed when hovering over them on the right edge of the graph.
 
-.. image:: /_static/imgs/streamflow-services/forecasted-return-periods.png
+.. image:: /_static/imgs/geoglows-hydroviewer/forecasted-return-periods.png
    :width: 700
 
 Historical
@@ -71,7 +71,7 @@ Historical
 2. The different colors in the graph represent the different return periods which are computed from the 40-year historical simulation and Gumbel Method.
 3. A table displaying the threshold values is included below the graph.
 
-.. image:: /_static/imgs/streamflow-services/historical-simulation.png
+.. image:: /_static/imgs/geoglows-hydroviewer/historical-simulation.png
    :width: 700
 
 Daily/Monthly Average
@@ -80,7 +80,7 @@ Daily/Monthly Average
 1. Daily and Monthly Average Streamflows are calculated from historical simulation.
 2. These tabs will pop up on the top after you click “Get Historical Data”
 
-.. image:: /_static/imgs/streamflow-services/streamflow-averages.png
+.. image:: /_static/imgs/geoglows-hydroviewer/streamflow-averages.png
    :width: 700
 
 Flow-Duration
@@ -88,5 +88,5 @@ Flow-Duration
 
 1. Exceedance probability of different flow rates.
 
-.. image:: /_static/imgs/streamflow-services/flow-duration-curve.png
+.. image:: /_static/imgs/geoglows-hydroviewer/flow-duration-curve.png
    :width: 700

@@ -13,7 +13,7 @@ that strong coordination and commitment are in place for links among data, infor
 policy. From research to implementation, GEOGloWS provides the demonstration grounds for user-driven solutions to
 address water issues.
 
-.. image:: _static/imgs/overview/forecasted-and-historical-streamflow.jpg
+.. image:: _static/imgs/about-gem/forecasted-and-historical-streamflow.jpg
 
 Click |intro_link| to view a presentation that introduces GEOGloWS.
 
