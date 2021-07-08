@@ -1,13 +1,9 @@
 WHOs Water Data Explorer
 ========================
-
-Introduction
-------------
-
 In recent years, there has been a growing need for standardized ways of sharing water data on the web. In response, the
 Consortium of Universities for the Advancement of Hydrologic Science (CUAHSI) has developed the Hydrologic Information
 System (HIS) along with the standardized WaterOneFlow web services and WaterML data exchange format. Tools to access
-data shared to the `WaterOneFlow services and WaterML already exist such as the Microsoft Windows HydroDesktop software <https://www.sciencedirect.com/science/article/pii/S1364815212001053>`_,
+data shared to the WaterOneFlow services and WaterML already exist such as the `Microsoft Windows HydroDesktop software <https://www.sciencedirect.com/science/article/pii/S1364815212001053>`_,
 `WaterML R package <https://github.com/jirikadlec2/waterml>`_, and the web-based `CUAHSI HydroClient <https://data.cuahsi.org/>`_
 which serves as an access point to the `CUAHSI HIS <http://hiscentral.cuahsi.org/>`_ database.
 

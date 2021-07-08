@@ -1,12 +1,12 @@
-Global Hydroviewer App
-----------------------
+GEOGloWS Hydroviwer (Web App)
+=============================
 This tutorial will show how to use the GEOGloWS ECMWF Streamflow Explorer App. Features include a forecast hydrograph
 for each stream, historically simulated streamflows, and the ability to download time series.
 
-To open the app, please click here: https://geoglows.apps.aquaveo.com/apps/geoglows-hydroviewer/
+To open the app, please click here: https://apps.geoglows.org/apps/geoglows-hydroviewer/
 
 View the Animated Forecast
-==========================
+--------------------------
 1. Zoom in on an area that looks interesting and explore the buttons on the left hand side of the hydroviewer
 
 .. image:: /_static/imgs/streamflow-services/animated-forecast-full.jpg
@@ -27,7 +27,7 @@ button.
 
 
 Locate a Stream by its reach_ID
-===============================
+-------------------------------
 
 You can zoom in and select any stream you want (and feel free to explore) but in order to match other examples later
 follow these steps to locate a specific reach ID found in Colombia.
@@ -45,7 +45,7 @@ follow these steps to locate a specific reach ID found in Colombia.
    :width: 700
 
 Visualize and Obtain Data
-=========================
+-------------------------
 Choose a stream and click on it in order to pull up the data. On the top bar, there are five tabs that allow you to
 examine the forecast and simulated historical data for the selected stream.
 

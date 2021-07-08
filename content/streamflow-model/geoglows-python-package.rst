@@ -1,5 +1,5 @@
-GEOGloWS Python Notebook Examples
----------------------------------
+geoglows Python package
+=======================
 
 The same functions to access forecasts through the REST API have been created in a Python package called geoglows that
 is documented at this site: https://geoglows.readthedocs.io/en/latest/. Besides access to the streamflow services

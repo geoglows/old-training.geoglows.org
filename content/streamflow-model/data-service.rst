@@ -1,55 +1,52 @@
-REST API Access
-===============
+Data Service (REST API)
+=======================
 
 The REST API allows you to query and download information for any stream based on forming a query with parameters as
 part of the URL. Documentation for the possible queries and how to form them is found on the main GEOGloWS services
 page https://geoglows.ecmwf.int/. The following workshop provides a brief overview of how the services are used.
 
-GEOGLoWS ECMWF Streamflow REST API Tutorial
--------------------------------------------
-
-To Use the REST API Documentation
-*********************************
+REST API Documentation
+----------------------
 
 1. Go to this website where you can find the documentation for the REST API: https://geoglows.ecmwf.int
 2. Click the tab on the top called “REST API Documentation”
 3. Click on the blue bar that says GET and the name of the streamflow API method
 
-.. image:: /_static/imgs/rest-api-access/get.png
+.. image:: /_static/imgs/data-service-demo/get.png
    :width: 700
 
 4. Press the white “Try it out” button located beneath the blue bar on the right side
 
-.. image:: /_static/imgs/rest-api-access/try-it-out.png
+.. image:: /_static/imgs/data-service-demo/try-it-out.png
    :width: 700
 
 5. Provide the necessary parameters. Usually, the only argument is either a reach_id or both a latitude and a longitude
 
-.. image:: /_static/imgs/rest-api-access/parameters.png
+.. image:: /_static/imgs/data-service-demo/parameters.png
    :width: 700
 
 6. Press the blue “Execute” bar
 
-.. image:: /_static/imgs/rest-api-access/execute.png
+.. image:: /_static/imgs/data-service-demo/execute.png
    :width: 700
 
 7. The website will then generate the appropriate curl command and URL to access the data you chose with the parameters
 you provided
 
-.. image:: /_static/imgs/rest-api-access/curl-request-url.png
+.. image:: /_static/imgs/data-service-demo/curl-request-url.png
    :width: 700
 
 8. After retrieving the streamflow information from the REST API, it will be presented as a preview under code 200
 (which is a common response code for a successful query). A download button is found on the bottom right of that box.
 
-.. image:: /_static/imgs/rest-api-access/streamflow-information.png
+.. image:: /_static/imgs/data-service-demo/streamflow-information.png
    :width: 700
 
 9. You can copy and paste the URL you found in step 6 into a new tab of your web browser to retrieve the same result
 without needing to use the documentation’s interactive tool
 
-Explanation of Forecasted Streamflow Methods
-********************************************
+Forecasted Datasets
+-------------------
 
 Each day, a new 15-day weather prediction is made by ECMWF. The weather forecast is composed of 52 ensemble members.
 From that weather prediction, a surface runoff estimation is made using the precipitation forecast and a land surface
@@ -69,8 +66,8 @@ values.
 **ForecastRecords**: Each day, the average of the predicted flows from 52 forecast ensemble members is recorded and can be
 retrieved to see a longer running record of streamflow predictions.
 
-Explanation of Historically Simulated Streamflow Methods
-********************************************************
+Historically Simulated Datasets
+-------------------------------
 
 ECMWF provides the ERA5 historically simulated runoff dataset. This dataset is also used to drive the GEOGloWS ECMWF
 model and produce a historical streamflow simulation. This streamflow simulation covers from January 1, 1979 to the

@@ -1,13 +1,5 @@
-Historical Validation
-=====================
-
-The historical validation workshops will showcase some of the validation work we have done in different pilot regions.
-More importantly these workshops will guide you on how you can use your own local observations to evaluate the
-performance of the model for your rivers.
-
-`Historical Validation Studies and Methods Presentation <https://docs.google.com/presentation/d/1rPriBch8Dr72Cx5nK2nayFLH60NvH7-qqawBdEXsXTA/edit?usp=sharing>`_
-
-`How to Perform Historical Validation Using Your own Observation Data (Google Colab) <https://colab.research.google.com/drive/14u9aMkf7_SnRdlmner5LdmG_ZfvrAGkL>`_
+Historical Validation Example (Sample Data Provided)
+====================================================
 
 In this tutorial, we will show how to validate the GEOGloWS ECMWF Streamflow Service historical simulation using the
 HydroStats tethys app.
@@ -33,7 +25,7 @@ The observed data csv should look like this:
 https://geoglows.ecmwf.int/api/HistoricSimulation/?reach_id=9004355&return_format=csv
 If you are performing the validation for a different Reach ID, you may edit the Reach ID in the url above, or use the
 GEOGloWS website to access the API. To use the interactive website, go to this link:
-https://geoglows.ecmwf.int/documentation#/default/get_HistoricSimulation_ and click Get Historic Simulation. Click
+https://geoglows.ecmwf.int/documentation and click Get Historic Simulation. Click
 “Try,” enter the Reach ID, and click “execute.” This will then give you the option to download the historical simulation.
 The simulated data csv should look like this:
 
@@ -45,7 +37,7 @@ Open the Statistics Calculator App
 
 Once we have the historic simulated data and the historic observed data we are able to run the historical validation.
 
-1. Go to https://tethys-staging.byu.edu/apps/
+1. Go to https://apps.geoglows.org
 
 2. Open the Hydrostats App
 
@@ -164,6 +156,7 @@ Analysis
    a. In this case we are going to select:
 
       * Mean Absolute Error, Root Mean Square Error, Nash-Sutcliffe Efficiency, King-Gupta Efficiency (2012).
+
       .. note::
 
          Leave all of the King-Gupta Efficiency (2012) parameters at the default setting
@@ -185,8 +178,6 @@ rough estimate of water balance.
 
    .. image:: /_static/imgs/historical-validation/volume.png
       :width: 700
-
-
 
 
 

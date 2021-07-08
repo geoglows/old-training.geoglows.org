@@ -34,7 +34,7 @@ is used to add, update, and delete apps available in the Warehouse.
     The GRACE satellite data have become useful to understand groundwater anomalies. This application (still being updated)
     provides visualization and access to this information.
 
-:doc:`HydroStats </content/streamflow-model-workshops/historical-validation>`
+:doc:`HydroStats </content/streamflow-model/historical-validation>`
     This application is used for validation of the GEOGloWS streamflow historical and forecasts as you will see in those
     sections, but it is a general purpose tool to perform a goodness of fit between observed and modeled (or any two) time
     series.
