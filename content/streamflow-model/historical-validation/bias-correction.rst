@@ -1,5 +1,29 @@
 Bias Correction
 ===============
+
+Introduction
+------------
+
+Global model results often show biases at local scales or specific locations. While timing and other general parameters
+of a flood event may be correct, the actual magnitude of the event may be consistently higher or lower than the actual
+flows. These biased predictions prevent their use at a local scale because the bias can significantly affect the
+accuracy of a simulated flood event and, if incorrect, can cause decision-makers to lose confidence in models.
+
+A bias correction method based on the method presented by Farmer et al.(2018) based on the flow duration curve to
+correct the bias in simulated streamflow is  proposed. For every month in observed and historic simulated time series,
+we calculate the flow duration curve. After that, in a single month, we can estimate the non-exceedance probability of
+every simulated value. Therefore we can estimate the observed streamflow value that corresponds to that non-exceedance
+probability. Finally, we convert the simulated value by replacing it with the equivalent observed streamflow to the same
+non-exceedance probability.
+
+.. image:: /_static/imgs/historical-validation/bias-correction/intro-flow-duration.png
+   :width: 550
+   :align: center
+
+.. image:: /_static/imgs/historical-validation/bias-correction/bias-correction.png
+   :width: 700
+   :align: center
+
 If you have historical observations for a site you are interested in then you can use that do adjust any bias in the
 historical simulation and forecast at that point (we are working on extending bias correction to ungaged areas). The
 methods and results from some pilot studies are given in the presentation and then you can see how this works as part of

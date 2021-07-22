@@ -1,6 +1,31 @@
 Forecast Skill Evaluation
 =========================
 
+Introduction
+------------
+
+The GEOGloWS ECMWF Streamflow Services (GESS) is a Global Streamflow Prediction Service that uses the ECMWF ensemble
+meteorological forecasting system, which consists in:
+
+* 1 high-resolution member with spatial resolution of 9 km for 10 days.  The  temporal resolution for this high resolution member is 1 hour for the first 4 days (days 1 – 4), 3 hours for the next 2 days (days 5-6), and 6 hours for the final 4 days (days 7-10).
+* 51 members with a spatial resolution of 18 km for the first 10 days (days 1 – 10), and 36km for the next 5 days (days 11 to 15). The  temporal resolution for these members is 3 hours for the first 6 days (days 1 – 6)  and 6 hours for the next 9 days (days 7-15).
+
+This ensemble is converted to surface runoff using the Hydrology Tiled ECMWF Scheme for Surface Exchanges over Land
+(HTESSEL) model. After that, an area-weighted grid-to-vector downscaling is performed for the runoff. GESS computes this
+cumulative runoff volume at each time step as an incremental contribution for each sub-basin. The Routing Application
+for Parallel computation of Discharge (RAPID) model is then used to route these inputs through the stream network (Qiao
+et al., 2019; Snow et al., 2016).
+
+Comparing observed data with simulated forecasts for any flood event where the GESS model is available it is possible to
+determine how accurate was the forecast predicting a high flow event and with how many days in advance. Previous results
+have shown that the GESS forecast can capture high flood events with at least 5 days in advance. Unfortunately, the
+model cannot capture the flow regulations made by the hydraulic structures, and the high floods due to local
+High-Intensity Precipitation Events.
+
+.. image:: /_static/imgs/historical-validation/forecast-skill-evaluation/intro-forecasted-streamflow.gif
+   :width: 700
+   :align: center
+
 If you can get observed streamflow within a relatively short period of time you can follow the methods and workflow for
 evaluating the skill of forecasting from this presentation and workshop that includes some python workflows.
 
