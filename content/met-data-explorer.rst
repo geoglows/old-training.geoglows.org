@@ -167,4 +167,4 @@ Additional Resources
 
 - MDE source code `<https://github.com/BYU-Hydroinformatics/Met-Data-Explorer>`_
 
-- Grids Documentation <https://tsgrids.readthedocs.io/en/stable/>`_ .
+- Grids Documentation <https://tsgrids.readthedocs.io/en/stable/>`_
