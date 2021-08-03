@@ -175,6 +175,12 @@ The steps to retrieve Time series using the "Adding a Shape Feature" method are 
 Additional Resources
 ********************
 
-- MDE source code `<https://github.com/BYU-Hydroinformatics/Met-Data-Explorer>`_
+- `MDE Source Code <https://github.com/BYU-Hydroinformatics/Met-Data-Explorer>`_
 
-- Grids Documentation <https://tsgrids.readthedocs.io/en/stable/>`_
+- `MDE Documentation <https://met-data-explorer.readthedocs.io/en/latest/index.html>`_
+
+- `Grids Source Code <https://github.com/rileyhales/grids>`_
+
+- `Grids Documentation <https://tsgrids.readthedocs.io/en/stable/>`_
+
+- `Grids Demo <https://gist.github.com/rileyhales/79761303df16127e0195e11425fc2d9d>`_
