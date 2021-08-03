@@ -131,7 +131,7 @@ retrieved.
 The first option is to upload a shapefile which will be converted and stored as a geojson in the app. In order to see the dialogue box to upload a shapefile,
 select this option from the dropdown menu as shown in the figure below.
 
-.. image:: /_static/imgs/met-data-explorer//1.12.png
+.. image:: /_static/imgs/met-data-explorer/1.12.png
    :width: 1000
    :align: center
 
