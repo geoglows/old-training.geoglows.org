@@ -1,5 +1,15 @@
 .. _Met Data Explorer:
 
+.. |info_metadata_var| image:: /_static/imgs/met-data-explorer/info_metadata_var.png
+
+.. |disp_settings| image:: /_static/imgs/met-data-explorer/disp_settings.png
+
+.. |left| image:: /_static/imgs/met-data-explorer/left.png
+
+.. |filter| image:: /_static/imgs/met-data-explorer/filter.png
+
+
+
 The Met Data Explorer
 =====================
 
