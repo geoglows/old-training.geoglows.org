@@ -16,11 +16,11 @@ every simulated value. Therefore we can estimate the observed streamflow value t
 probability. Finally, we convert the simulated value by replacing it with the equivalent observed streamflow to the same
 non-exceedance probability.
 
-.. image:: /_static/imgs/historical-validation/bias-correction/intro-flow-duration.png
+.. image:: /_static/imgs/bias-correction/intro-flow-duration.png
    :width: 550
    :align: center
 
-.. image:: /_static/imgs/historical-validation/bias-correction/bias-correction.png
+.. image:: /_static/imgs/bias-correction/bias-correction.png
    :width: 700
    :align: center
 

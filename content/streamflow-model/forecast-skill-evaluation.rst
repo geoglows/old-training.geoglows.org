@@ -22,7 +22,7 @@ have shown that the GESS forecast can capture high flood events with at least 5 
 model cannot capture the flow regulations made by the hydraulic structures, and the high floods due to local
 High-Intensity Precipitation Events.
 
-.. image:: /_static/imgs/historical-validation/forecast-skill-evaluation/intro-forecasted-streamflow.gif
+.. image:: /_static/imgs/forecast-skill-evaluation/intro-forecasted-streamflow.gif
    :width: 700
    :align: center
 

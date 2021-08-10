@@ -34,3 +34,5 @@ To open the app, please visit: `<https://apps.geoglows.org/apps/geoglows-hydrovi
    streamflow-model/geoglows-hydroviewer
    streamflow-model/geoglows-python-package
    streamflow-model/historical-validation
+   streamflow-model/bias-correction
+   streamflow-model/forecast-skill-evaluation
