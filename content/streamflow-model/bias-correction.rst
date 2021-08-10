@@ -9,12 +9,20 @@ of a flood event may be correct, the actual magnitude of the event may be consis
 flows. These biased predictions prevent their use at a local scale because the bias can significantly affect the
 accuracy of a simulated flood event and, if incorrect, can cause decision-makers to lose confidence in models.
 
-A bias correction method based on the method presented by Farmer et al.(2018) based on the flow duration curve to
-correct the bias in simulated streamflow is  proposed. For every month in observed and historic simulated time series,
-we calculate the flow duration curve. After that, in a single month, we can estimate the non-exceedance probability of
-every simulated value. Therefore we can estimate the observed streamflow value that corresponds to that non-exceedance
-probability. Finally, we convert the simulated value by replacing it with the equivalent observed streamflow to the same
-non-exceedance probability.
+A bias correction method derived from the method presented by
+`Farmer et al.(2018) <https://hess.copernicus.org/articles/22/5741/2018/>`_, which is based on the flow duration curve,
+has been proposed to correct the bias in the GEOGLoWS ECMWF simulated streamflow. First, the flow duration curve is
+calculated from thehistoric simulated timeseries and theobserved streamflow timeseries for each month. A flow duration
+curve shows the cumulative percent of time that any given discharge was exceeded during a given period. In the graphic
+below, the flow duration curves are shown on the right. Yellow is the original simulated data, blue is observed, and
+red is the simulated data after bias correction.
+
+Using the flow duration curve, we can estimate the non-exceedance probability of every simulated value for each month.
+This is shown in the graphic as the top horizontal line, connecting the simulated data to the simulated flow duration
+curve.The vertical line shows that same non-exceedance probability on the observed data flow duration curve. We can then
+estimate the observed streamflow value that corresponds to that non-exceedance probability. Finally, we correct
+the simulated value by replacing it with the equivalent observed streamflow to the same non-exceedance probability,
+shown by the bottom horizontal line.
 
 .. image:: /_static/imgs/bias-correction/intro-flow-duration.png
    :width: 550
@@ -24,23 +32,24 @@ non-exceedance probability.
    :width: 700
    :align: center
 
-If you have historical observations for a site you are interested in then you can use that do adjust any bias in the
-historical simulation and forecast at that point (we are working on extending bias correction to ungaged areas). The
-methods and results from some pilot studies are given in the presentation and then you can see how this works as part of
-the GEOGloWS Hydroviewer app or with the workflow given in the Python notebook that uses functionality from the geoglows
-Python package.
+You can use historical observed data that you have for sites that you are interested in to adjust any bias in the
+historical simulation and forecast at that point (we are working on extending bias correction to ungauged areas). The
+methods and results from some pilot studies are given in the presentation.
 
 `Bias Correction Presentation <https://docs.google.com/presentation/d/1XZ15eqWV1hT4UdX9DxLjctpyS0Bb2G8UGg5oYnuaKQw/edit?usp=sharing>`_
 
+The workshop below will show you how the bias correction process can be done in python using the geoglows package.
+
 `Bias Correction Workshop <https://colab.research.google.com/drive/15MUTx3lb5P93BLUv8Uehv0gTudc43qkX?usp=sharing>`_
 
-If you have observed streamflow data, you can add it to the bias correction tool through a csv file and view corrections
-for the simulated data.
+Finally, this tutorial will show you how you can perform bias correction in the GEOGloWS Hydroviewer app. If you have
+observed streamflow data, you can add it to the bias correction tool through a csv file and view corrections for the
+simulated data within the app.
 
 Tutorial
 --------
 
-A GEOGloWS ECMWF Streamflow Services generates a historical simulation from 1979-present based on weather data records.
+The GEOGloWS ECMWF Streamflow Services generates a historical simulation from 1979-present based on weather data records.
 However, the model often has bias, commonly overpredicting streamflow. When observed streamflow data is available on a
 stream, we can use that data to improve the historical simulation and forecast model. This process is called bias
 correction.
@@ -62,7 +71,7 @@ The second column may have any title but **must** contain streamflow values in c
 Inputting Data
 --------------
 
-1. Go to the GEOGloWS ECMWF Streamflow Hydroviewer:  https://geoglows.apps.aquaveo.com/apps/.
+1. Go to the GEOGloWS ECMWF Streamflow Hydroviewer:  http://apps.geoglows.org/apps/.
 
 2. After opening the Hydroviewer app, find the river segment you would like to do the bias correction on. You can do
 this either by searching for a Reach ID or latitude/longitude coordinates using the fields on the left or by zooming to

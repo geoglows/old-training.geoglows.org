@@ -49,7 +49,10 @@ Visualize and Obtain Data
 Choose a stream and click on it in order to pull up the data. On the top bar, there are five tabs that allow you to
 examine the forecast and simulated historical data for the selected stream.
 
-.. note::The Average Flows and Flow-Duration tabs will not be visible until you get the historical data from the second tab. This will be explained below.
+.. note::
+
+   The Average Flows and Flow-Duration tabs will not be visible until you get the historical data from the second tab.
+   This will be explained below.
 
 .. image:: /_static/imgs/geoglows-hydroviewer/streamflow-results.jpg
    :width: 700
