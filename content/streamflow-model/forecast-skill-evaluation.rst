@@ -13,8 +13,8 @@ meteorological forecasting system, which consists of:
 This ensemble is converted to surface runoff using the Hydrology Tiled ECMWF Scheme for Surface Exchanges over Land
 (HTESSEL) model. After that, an area-weighted grid-to-vector downscaling is performed for the runoff. GESS computes this
 cumulative runoff volume at each time step as an incremental contribution for each sub-basin. The Routing Application
-for Parallel computation of Discharge (RAPID) model is then used to route these inputs through the stream network (Qiao
-et al., 2019; Snow et al., 2016).
+for Parallel computation of Discharge (RAPID) model is then used to route these inputs through the stream network (`Qiao
+et al., 2019 <https://www.sciencedirect.com/science/article/pii/S1364815219304232>`_; `Snow et al., 2016 <https://onlinelibrary.wiley.com/doi/full/10.1111/1752-1688.12434>`_).
 
 By comparing observed data with simulated forecasts for any flood event where the GESS model is available, it is
 possible to determine how accurately the forecast predicted a high flow event and how many days in advance the model
