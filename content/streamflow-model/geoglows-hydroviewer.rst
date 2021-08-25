@@ -7,7 +7,7 @@ To open the app, please click here: http://apps.geoglows.org/apps/geoglows-hydro
 
 View the Animated Forecast
 --------------------------
-1. Zoom in on an area that looks interesting and explore the buttons on the left-hand side of the Hydroviewer
+1. Zoom in on an area that looks interesting and explore the buttons on the left-hand side of the Hydroviewer.
 
 .. image:: /_static/imgs/geoglows-hydroviewer/animated-forecast-full.jpg
    :width: 700

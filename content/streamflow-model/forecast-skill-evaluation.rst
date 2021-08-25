@@ -7,7 +7,7 @@ Introduction
 The GEOGloWS ECMWF Streamflow Services (GESS) is a Global Streamflow Prediction Service that uses the ECMWF ensemble
 meteorological forecasting system, which consists of:
 
-* 1 high-resolution member with spatial resolution of 9 km for 10 days.  The  temporal resolution for this high resolution member is 1 hour for the first 4 days (days 1 – 4), 3 hours for the next 2 days (days 5-6), and 6 hours for the final 4 days (days 7-10).
+* 1 high-resolution member with spatial resolution of 9 km for 10 days.  The  temporal resolution for this high-resolution member is 1 hour for the first 4 days (days 1 – 4), 3 hours for the next 2 days (days 5-6), and 6 hours for the final 4 days (days 7-10).
 * 51 members with a spatial resolution of 18 km for the first 10 days (days 1 – 10), and 36km for the next 5 days (days 11 to 15). The  temporal resolution for these members is 3 hours for the first 6 days (days 1 – 6)  and 6 hours for the next 9 days (days 7-15).
 
 This ensemble is converted to surface runoff using the Hydrology Tiled ECMWF Scheme for Surface Exchanges over Land
@@ -35,7 +35,7 @@ python workflows.
 Validating Flood Events from GEOGloWS ECMWF Streamflow Services
 ---------------------------------------------------------------
 
-This part of the workshop will show you how to validate the GEOGloWS ECMWF Streamflow Services short term forecast in
+This part of the workshop will show you how to validate the GEOGloWS ECMWF Streamflow Services short-term forecast in
 any flood event in any place in the world. You will compare observed data with simulated forecasts for a flood event to
 see how well the forecast performs.
 

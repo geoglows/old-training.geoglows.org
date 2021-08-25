@@ -73,7 +73,7 @@ model and produce a historical streamflow simulation. This streamflow simulation
 present with only a few months lag. The historical streamflow and products derived from it are available through the
 following methods:
 
-**HistoricSimulation**: Returns a time series of daily average streamflow from 1979 through the near present
+**HistoricSimulation**: Returns a time series of daily average streamflow from 1979 through the near present.
 
 **DailyAverages**: Returns a time series 366 steps long representing the average flow for each day of the year including
 leap day. This is roughly equivalent to what an average year of streamflow looks like at the reach of interest.

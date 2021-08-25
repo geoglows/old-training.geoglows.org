@@ -35,7 +35,7 @@ Hydrologic Modeling as a Service (HMaaS)
 The streamflow services are powered by the cyberinfrastructure at ECMWF by using their ensemble meteorological forecast
 through the HTESSEL land surface model to produce global runoff on a 16x16 kilometer grid. This output is then mapped to
 the GEOGloWS watersheds and routed through the river network using Muskingum routing, as implemented in the RAPID
-software to produce a 15-day forecast on every river. The ERA-5 retrospective historical data are run over the same
+software to produce a 15-day forecast on every river. The ERA5 retrospective historical data are run over the same
 domain to produce the 40-year record of streamflow that is used to derive return-periods and put the current forecast in
 context. Each of the components of the model and many of their results have been studied individually and published in
 academic journals, refer to the Publications page for more information on each component.

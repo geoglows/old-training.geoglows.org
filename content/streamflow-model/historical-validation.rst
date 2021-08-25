@@ -5,7 +5,7 @@ Introduction
 ------------
 
 These historical validation workshops will showcase some of the validation work we have done in different pilot regions.
-More importantly these workshops will guide you on how you can use your own local observations to evaluate the
+More importantly, these workshops will guide you on how you can use your own local observations to evaluate the
 performance of the model for your rivers.
 
 `Historical Validation Studies and Methods Presentation <https://docs.google.com/presentation/d/1rPriBch8Dr72Cx5nK2nayFLH60NvH7-qqawBdEXsXTA/edit?usp=sharing>`_
@@ -45,7 +45,7 @@ HydroStats Tethys app.
 Obtain Data
 -----------
 
-To perform the historical validation you first need to identify the stream of interest. You will need historical
+To perform the historical validation, you first need to identify the stream of interest. You will need historical
 observed data and simulated streamflow data for this stream. For this tutorial, we will provide demo data for the Reach ID
 9004355.
 
@@ -60,7 +60,7 @@ The observed data csv should look like this:
    :width: 350
 
 2. To get the historical simulation data, go to this url, which will access the API and download the historical simulation:
-https://geoglows.ecmwf.int/api/HistoricSimulation/?reach_id=9004355&return_format=csv
+https://geoglows.ecmwf.int/api/HistoricSimulation/?reach_id=9004355&return_format=csv This may take a few minutes.
 If you are performing the validation for a different Reach ID, you may edit the Reach ID in the url above, or use the
 GEOGloWS website to access the API. To use the interactive website, go to this link:
 https://geoglows.ecmwf.int/documentation and click Get Historic Simulation. Click
