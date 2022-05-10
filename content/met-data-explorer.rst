@@ -1,54 +1,54 @@
 .. _Met Data Explorer:
 
-.. |add| image:: /_static/imgs/t01.png
+.. |add| image:: /_static/imgs/met-data-explorer/t01.png
     :width: 20
 
-.. |create_group| image:: /_static/imgs/t02.png
+.. |create_group| image:: /_static/imgs/met-data-explorer/t02.png
     :width: 20
 
-.. |url_go| image:: /_static/imgs/t03.png
+.. |url_go| image:: /_static/imgs/met-data-explorer/t03.png
     :width: 20
 
-.. |auth_btn| image:: /_static/imgs/t04.png
+.. |auth_btn| image:: /_static/imgs/met-data-explorer/t04.png
     :width: 100
 
-.. |auth_add| image:: /_static/imgs/t05.png
+.. |auth_add| image:: /_static/imgs/met-data-explorer/t05.png
     :width: 20
 
-.. |save| image:: /_static/imgs/t06.png
+.. |save| image:: /_static/imgs/met-data-explorer/t06.png
     :width: 40
 
-.. |display| image:: /_static/imgs/t07.png
+.. |display| image:: /_static/imgs/met-data-explorer/t07.png
     :width: 100
 
-.. |marker| image:: /_static/imgs/t08.png
+.. |marker| image:: /_static/imgs/met-data-explorer/t08.png
     :width: 20
 
-.. |rectangle| image:: /_static/imgs/t09.png
+.. |rectangle| image:: /_static/imgs/met-data-explorer/t09.png
     :width: 20
 
-.. |polygon| image:: /_static/imgs/t10.png
+.. |polygon| image:: /_static/imgs/met-data-explorer/t10.png
     :width: 20
 
-.. |shp_dropdown| image:: /_static/imgs/t11.png
+.. |shp_dropdown| image:: /_static/imgs/met-data-explorer/t11.png
     :width: 80
 
-.. |use_shp| image:: /_static/imgs/t12.png
+.. |use_shp| image:: /_static/imgs/met-data-explorer/t12.png
     :width: 80
 
-.. |upload_shp| image:: /_static/imgs/t13.png
+.. |upload_shp| image:: /_static/imgs/met-data-explorer/t13.png
     :width: 80
 
-.. |plot| image:: /_static/imgs/t14.png
+.. |plot| image:: /_static/imgs/met-data-explorer/t14.png
     :width: 100
 
-.. |download| image:: /_static/imgs/t15.png
+.. |download| image:: /_static/imgs/met-data-explorer/t15.png
     :width: 80
 
-.. |right_arrow| image:: /_static/imgs/t16.png
+.. |right_arrow| image:: /_static/imgs/met-data-explorer/t16.png
     :width: 20
 
-.. |info| image:: /_static/imgs/t17.png
+.. |info| image:: /_static/imgs/met-data-explorer/t17.png
     :width: 20
 
 =========================
@@ -72,7 +72,7 @@ MDE was also designed in a way that allows users to customize it for local or re
 
 |
 
-.. image:: /_static/imgs/FA.png
+.. image:: /_static/imgs/met-data-explorer/FA.png
    :width: 300
    :align: center
 
@@ -109,7 +109,7 @@ The Navigation Panel Toggle can be used to show or hide the navigation panel.
 
 |
 
-.. image:: /_static/imgs/F1.png
+.. image:: /_static/imgs/met-data-explorer/F1.png
    :width: 800
    :align: center
 
@@ -123,13 +123,13 @@ The Add Catalog of Thredds Servers dialog will appear (shown in Figure 3).
 
 |
 
-.. image:: /_static/imgs/F2.png
+.. image:: /_static/imgs/met-data-explorer/F2.png
    :width: 800
    :align: center
 
 |
 
-.. image:: /_static/imgs/F3.png
+.. image:: /_static/imgs/met-data-explorer/F3.png
    :width: 800
    :align: center
 
@@ -140,7 +140,7 @@ The dialog will close and the group will be added to the navigation panel (see F
 
 |
 
-.. image:: /_static/imgs/F4.png
+.. image:: /_static/imgs/met-data-explorer/F4.png
    :width: 800
    :align: center
 
@@ -151,13 +151,13 @@ The Add a Thredds Server File dialog will appear (shown in Figure 6).
 
 |
 
-.. image:: /_static/imgs/F5.png
+.. image:: /_static/imgs/met-data-explorer/F5.png
    :width: 800
    :align: center
 
 |
 
-.. image:: d/_static/imgs/F6.png
+.. image:: d/_static/imgs/met-data-explorer/F6.png
    :width: 800
    :align: center
 
@@ -175,13 +175,13 @@ loaded into the Add a Thredds Server File dialog (see Figure 8).
 
 |
 
-.. image:: /_static/imgs/F7.png
+.. image:: /_static/imgs/met-data-explorer/F7.png
    :width: 800
    :align: center
 
 |
 
-.. image:: /_static/imgs/F8.png
+.. image:: /_static/imgs/met-data-explorer/F8.png
    :width: 800
    :align: center
 
@@ -193,7 +193,7 @@ was assigned (see Figure 9).
 
 |
 
-.. image:: /_static/imgs/F9.png
+.. image:: /_static/imgs/met-data-explorer/F9.png
    :width: 800
    :align: center
 
@@ -212,7 +212,7 @@ added authentication and click save |save|.
 
 |
 
-.. image:: /_static/imgs/F10.png
+.. image:: /_static/imgs/met-data-explorer/F10.png
    :width: 800
    :align: center
 
@@ -226,13 +226,13 @@ map and the Graph Window will open (see Figure 12).
 
 |
 
-.. image:: /_static/imgs/F11.png
+.. image:: /_static/imgs/met-data-explorer/F11.png
    :width: 800
    :align: center
 
 |
 
-.. image:: /_static/imgs/F12.png
+.. image:: /_static/imgs/met-data-explorer/F12.png
    :width: 800
    :align: center
 
@@ -250,7 +250,7 @@ Opacity slider. Once the display setting are set to your liking, click the Updat
 
 |
 
-.. image:: /_static/imgs/F13.png
+.. image:: /_static/imgs/met-data-explorer/F13.png
    :width: 800
    :align: center
 
@@ -265,7 +265,7 @@ click the Use Shapefile button |use_shp|.
 
 |
 
-.. image:: /_static/imgs/F14.png
+.. image:: /_static/imgs/met-data-explorer/F14.png
    :width: 800
    :align: center
 
@@ -276,7 +276,7 @@ button next to the uploaded file, and click the Use Shapefile button.
 
 |
 
-.. image:: /_static/imgs/F15.png
+.. image:: /_static/imgs/met-data-explorer/F15.png
    :width: 500
    :align: center
 
@@ -288,7 +288,7 @@ The time series will be plotted in the graph window (see Figure 16).
 
 |
 
-.. image:: /_static/imgs/F16.png
+.. image:: /_static/imgs/met-data-explorer/F16.png
    :width: 800
    :align: center
 
@@ -301,7 +301,7 @@ and variable currently selected in the MDE.
 
 |
 
-.. image:: /_static/imgs/F17.png
+.. image:: /_static/imgs/met-data-explorer/F17.png
    :width: 800
    :align: center
 
@@ -314,19 +314,19 @@ can be seen by clicking the Metadata Info button |info|. A dialog will open show
 
 |
 
-.. image:: /_static/imgs/F18.png
+.. image:: /_static/imgs/met-data-explorer/F18.png
    :width: 800
    :align: center
 
 |
 
-.. image:: /_static/imgs/F19.png
+.. image:: /_static/imgs/met-data-explorer/F19.png
    :width: 800
    :align: center
 
 |
 
-.. image:: /_static/imgs/F20.png
+.. image:: /_static/imgs/met-data-explorer/F20.png
    :width: 800
    :align: center
 
@@ -366,7 +366,7 @@ understandable.
 
 |
 
-.. image:: /_static/imgs/F21.png
+.. image:: /_static/imgs/met-data-explorer/F21.png
    :width: 800
    :align: center
 
@@ -387,7 +387,7 @@ degrees_north and degrees_east respectively), and calendar - specifying on which
 
 |
 
-.. image:: /_static/imgs/F22.png
+.. image:: /_static/imgs/met-data-explorer/F22.png
    :width: 800
    :align: center
 
@@ -404,7 +404,7 @@ EPSG 4326.
 
 |
 
-.. image:: /_static/imgs/F23.png
+.. image:: /_static/imgs/met-data-explorer/F23.png
    :width: 800
    :align: center
 
@@ -419,7 +419,7 @@ elements for creating a ncml file.
 
 |
 
-.. image:: /_static/imgs/F24.png
+.. image:: /_static/imgs/met-data-explorer/F24.png
    :width: 800
    :align: center
 
